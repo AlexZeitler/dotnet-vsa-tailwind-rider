@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TailwindVSA.Models;
 
-namespace TailwindVSA.Controllers;
+namespace TailwindVSA.Features.Home;
 
 public class HomeController : Controller
 {
@@ -17,7 +17,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        return View("~/Features/Home/Index.cshtml");
     }
 
     public IActionResult Privacy()
